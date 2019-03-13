@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <div class="logo">
+                <h1>ScriBBler</h1>
+                <span>Explore, Imagine, Create</span>
+               
+            </div>
+             <div class="buttons">
+                    <button class="btn1" id="SignIn"  data-toggle="modal" data-target="#exampleModal1">SIGN IN</button>
+                    <button class="btn1" id="SignUp"  data-toggle="modal" data-target="#exampleModal">SIGN UP</button>
+                </div>
+
+        </div>
+           
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+                    <button class="btn2" id="allPosts">All Posts</button>
+                    <button class="btn2" id="createPosts">Create Post</button>
+
+        </div>
+    </div>
+         <!-- Insert code for Sign In modal here -->
+    <div>
+
+<div class="modal fade" id="exampleModal" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header"> 
+        <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+              <div class="form-group">
+                  
+                <label for="exampleInputEmail1">Full Name</label>
+                <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Enter Full Name" required>
+              </div>
+            <div class="form-group">
+                 <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="Uname" aria-describedby="emailHelp" placeholder="Enter Username" required> 
+            </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp" placeholder="Enter Password" required>
+            </div>  
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Confirm Password</label>
+                <input type="password" class="form-control" id="CnfPassword" aria-describedby="emailHelp" placeholder="Confirm Password" required>
+              </div>
+              
+              
+              <button type="submit" class="btn btn-success index">Sign Up</button>
+        </form>
+      </div>
+      
+       </div>
+     </div>
+   </div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div class="modal fade" id="exampleModal1" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header"> 
+        <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<!--        SignIN-->
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="Uname" aria-describedby="emailHelp" placeholder="Enter Username"> 
+            </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp" placeholder="Enter Password">
+            </div>  
+           
+              <button type="submit" class="btn btn-success index">Sign In</button>
+            <div class="footer-signin">
+                <p class="not-a-member">Not a member?</p> <p class ="onsignup " onclick="opensignup()" data-target="#exampleModal" href="" data-toggle="modal" data-dismiss="modal">Sign Up</p>
+            </div>
+        </form>
+      </div>
+      
+       </div>
+     </div>
+   </div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Create Post modal here -->
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

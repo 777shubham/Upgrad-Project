@@ -1,0 +1,168 @@
+.post {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    float:left;
+    border-radius: 15px;
+}
+    
+/*
+.post1
+{
+ float:left;
+}
+.post2
+{
+  
+    float:right; 
+}
+*/
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+}
+.post-content {
+        width: 75%;           
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px;      
+}
+.post-title{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 100px;
+    margin-bottom: 0 !important;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff !important;
+    background-color: orange !important;
+    background-size: 2000% 2000%;
+}
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+
+}
+
+.main-container-div {
+    display: flex;
+    width: 100%;
+}
+
+.postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+.modal-header
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+        padding: 0px;
+}
+.modal-title
+{
+        width: 100%;
+    margin-top:8px;
+    margin-bottom:4px;
+}
+.btn1 {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 5px;
+}
+.btn2 {
+    background-color: #CFB53B;
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: 700;
+}   
+.form-control
+{
+    margin-bottom:5px !important;
+    background-color:#f1f1f1 !important;
+}
+.form-group {
+    padding: 0px;
+}
+.index
+{
+      width: 100%;
+    border-radius:0px !important;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.modal-title
+{
+    font-family:'Abel' !important;
+    font-weight: bolder !important;
+   font-size: 27px !important;
+}
+.modal-content
+{
+        width: 83% !important;
+    margin-left: 30px !important;
+}
+label
+{
+    font-family:'Abel' !important;
+    font-weight: 800 !important;
+   font-size: 17px !important; 
+}
+.not-a-member
+{
+   font-family:'Abel' !important;
+    font-weight: bolder !important;
+}
+.footer-signin
+{
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:0px;
+    font-size: 17px !important; 
+}
+.onsignup
+{
+   font-family:'Abel' !important;
+    font-weight:800; !important;
+    color: #1230B4;
+    margin-left:8px;
+    font-size: 17px !important; 
+}
+
