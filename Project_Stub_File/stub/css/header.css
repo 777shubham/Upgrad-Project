@@ -27,3 +27,90 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     align-items: flex-start;
     width: 100%;
 }
+.postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+.modal-header
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+        padding: 0px;
+}
+.modal-title
+{
+        width: 100%;
+    margin-top:8px;
+    margin-bottom:4px;
+}
+.btn1 {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 5px;
+}
+.btn2 {
+    background-color: #CFB53B;
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: 700;
+}   
+.form-control
+{
+    margin-bottom:5px !important;
+    background-color:#f1f1f1 !important;
+}
+.form-group {
+    padding: 0px;
+}
+.index
+{
+      width: 100%;
+    border-radius:0px !important;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.modal-title
+{
+    font-family:'Abel' !important;
+    font-weight: bolder !important;
+   font-size: 27px !important;
+}
+.modal-content
+{
+        width: 83% !important;
+    margin-left: 30px !important;
+    color:black;
+}
+label
+{
+    font-family:'Abel' !important;
+    font-weight: 800 !important;
+   font-size: 17px !important; 
+}
+.not-a-member
+{
+   font-family:'Abel' !important;
+    font-weight: bolder !important;
+}
+.footer-signin
+{
+   display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:0px;
+    font-size: 17px !important; 
+}
+.onsignup
+{
+   font-family:'Abel' !important;
+    font-weight:800; !important;
+    color: #1230B4;
+    margin-left:8px;
+    font-size: 17px !important; 
+}
