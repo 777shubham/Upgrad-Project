@@ -114,3 +114,15 @@ label
     margin-left:8px;
     font-size: 17px !important; 
 }
+@media only screen and (max-width: 400px) {
+    #signup,#signin  {
+       padding: 5px;
+    margin: 13px 3px;
+    }
+    #scriblogo{
+        font-size: 40px;
+    }
+    #logo2 {
+        font-size: 13px;
+    }
+}
