@@ -1,7 +1,7 @@
 .post {
     position: relative;
     width: 42%;
-    height: 10%;
+    height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 8px 4% 8px 4%;
@@ -10,17 +10,54 @@
     overflow:hidden;
 }
     
-/*
-.post1
-{
- float:left;
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
 }
-.post2
+.postButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+.modal-header
 {
+    display: block;
+    text-align: center;
+    width: 90%;
+        padding: 0px;
+
+    border-bottom: 1px solid grey !important;
+        margin: 0px 15px;
+   
   
-    float:right; 
+ 
 }
-*/
+.modal-title
+{
+        width: 100%;
+    margin-top:8px;
+    margin-bottom:4px;
+    
+}
+.btn1 {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 5px;
+}
+.btn2 {
+    background-color: #CFB53B;
+    padding: 10px;
+    margin: 5px 5px;
+    font-weight: 700;
+}   
+
 .post-left {
         width: 15%;            
         max-width: 15%;
@@ -37,8 +74,10 @@
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;  
-        margin
+        padding:0px 20px 0px 0px; 
+        overflow:hidden;
+        line-height: 1.2;
+        padding-bottom: 2px;   
 }
 .post-title{
     font-family: 'Itim', cursive;
@@ -68,6 +107,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+    font-family: 'JosefinSans-Regular';
 }
 
 body {
@@ -83,10 +123,11 @@ body {
     height: 100%;
     width: 100%;
     display:flex;
-    flex-direction: row;
+    //flex-direction: row;
     flex-wrap: wrap;
     
     justify-content: center;
+/*    margin-bottom: 5px;*/
    
 
 }
@@ -94,6 +135,7 @@ body {
 .main-container-div {
     display: flex;
     width: 100%;
+    margin-bottom: 5px; 
 }
 
 .deltrash{
@@ -115,7 +157,7 @@ body {
 }
 
 #deletethispost {
-    text-align: center;
+    text-align: center;3
     font-weight: 600;
     margin: 0px;
 }
@@ -128,7 +170,7 @@ body {
     width: 35%;
     padding: 5px;
     margin: 1px 30px 20px 29px;
-    border-radius:0px !important;
+        border-radius:0px !important;
 }
 .close {
     background-color:#818181;
@@ -136,6 +178,7 @@ body {
 .modal-content {
         margin: 20% auto;
 }
+
 
 @media only screen and (max-width : 1000px )
 {

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
-        
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <style>        
     </style>     
 </head>
@@ -12,6 +15,16 @@
         <div class="header">
              <!-- Insert code for Sign Up, Sign In button here. 
                Add code for "ScriBBler" heading and the sub-heading -->
+            <div class="logo">
+                <h1 id="scriblogo">ScriBBler</h1>
+                
+                <span id="logo2">Explore, Imagine, Create</span>
+               
+            </div>
+             <div class="buttons">
+                    <button class="btn1" id="SignIn"  data-toggle="modal" data-target="#exampleModal1">SIGN IN</button>
+                    <button class="btn1" id="SignUp"  data-toggle="modal" data-target="#exampleModal">SIGN UP</button>
+                </div>
         </div>
 
     <div class="blogContent">
@@ -20,22 +33,113 @@
     </div>
 
 <div class="blogAuthor">
-
+<button type="button" id="editbutton" onclick="editor()">Edit&nbsp;<i class="fas fa-edit"></i></button>
     <!-- Insert code for Edit/Save button and  -->
 
-    <p>Jimi</p>
+
+    <p id="jimitext">Jimi</p>
 </div>
 
-<div class="blogText">
+<div class="blogText" id="jimiedit">
     <p id="blogBody">
             Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
     </p>
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
+        <button type="button" id="likebtn" onclick="liker()"><i class="fas fa-thumbs-up"></i>&nbsp;Like</button>
+    <p id="liketxt">Be the first one to like this!</p>
+        <textarea id="txtarea" rows="7" placeholder="Leave a comment..."></textarea>
+        <button type="button" id="commentbtn" onclick="comments(txtarea)">Comment</button>
+        <p id="allcommentsblock">All Comments</p>
+        <div id="listofcomments">
+        
+        </div>
 
+         <div>
+        <!--Sign In modal-->
+<div class="modal fade" id="exampleModal" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header"> 
+        <h5 class="modal-title" id="exampleModalLabel">Get Started</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+              <div class="form-group">
+                  
+                <label for="exampleInputEmail1">Full Name</label>
+                <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" placeholder="Enter Full Name" required>
+              </div>
+            <div class="form-group">
+                 <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="Uname" aria-describedby="emailHelp" placeholder="Enter Username" required> 
+            </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp" placeholder="Enter Password" required>
+            </div>  
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Confirm Password</label>
+                <input type="password" class="form-control" id="CnfPassword" aria-describedby="emailHelp" placeholder="Confirm Password" required>
+              </div>
+              
+              
+              <button type="submit" class="btn btn-success index">Sign Up</button>
+        </form>
+      </div>
+      
+       </div>
+     </div>
+   </div>
+
+    </div>
+
+    <div>
+
+    	<!-- Insert code for Sign Up modal here -->
+        <div class="modal fade" id="exampleModal1" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        
+      <div class="modal-header"> 
+        <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<!--        SignIN-->
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="text" class="form-control" id="Uname" aria-describedby="emailHelp" placeholder="Enter Username"> 
+            </div>
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" id="Password" aria-describedby="emailHelp" placeholder="Enter Password">
+            </div>  
+           
+              <button type="submit" class="btn btn-success index">Sign In</button>
+            <div class="footer-signin">
+                <p class="not-a-member">Not a member?</p> <p class ="onsignup " onclick="opensignup()" data-target="#exampleModal" href="" data-toggle="modal" data-dismiss="modal">Sign Up</p>
+            </div>
+        </form>
+      </div>
+      
+       </div>
+     </div>
+   </div>
+
+    </div>
     <script src="..\js\post.js" defer></script>
-    <script src="..\js\header.js">             
-    </script>
+    <script src="..\js\header.js">  </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </body>
