@@ -183,13 +183,13 @@ body {
 @media only screen and (max-width : 1000px )
 {
     .post-title{
-        font-size: 17px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 700px) {
     
     .post {
-        width:80%;
+        width:40%;
     } 
     .post-title{
         font-size: 20px;}
@@ -197,6 +197,10 @@ body {
     
 @media only screen and (max-width: 480px) {
     
+    .post {
+        width:40%;
+    }
+        
         .post-title{
         font-size: 16px;}
     }
